@@ -5,7 +5,7 @@ import styles from './TablesBookingNew.module.scss';
 const TablesBookingNew = () => {
   return (
     <div className={styles.component}>
-      <h2>Tables Booking New view</h2>
+      <h2>New booking</h2>
     </div>
   );
 };
