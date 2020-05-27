@@ -30,7 +30,7 @@ const TablesBooking = () => {
         <h2>Tables reservation</h2>
         <h3>Nr: {id}</h3>
       </div>
-      <Table className={styles.table}>
+      <Table>
         <TableHead>
           <TableCell>Table</TableCell>
           <TableCell>Amount of people</TableCell>

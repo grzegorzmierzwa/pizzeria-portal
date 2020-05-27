@@ -67,7 +67,7 @@ const Tables = () => {
             shrink: true,
           }}
         />
-        <Button className={styles.button} component ={Link} to={process.env.PUBLIC_URL +'/tables/booking/new'}>New Table</Button>
+        <Button className={styles.button} component ={Link} to={process.env.PUBLIC_URL +'/tables/booking/new'}>New Reservation</Button>
         <Button className={styles.button} component ={Link} to={process.env.PUBLIC_URL +'/tables/events/new'}>New Event</Button>
       </form>
 
