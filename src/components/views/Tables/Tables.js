@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { Table, TableHead, TableCell, TableRow } from '@material-ui/core';
+
+import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
 
 
 const demoContent = {
@@ -106,23 +110,6 @@ const Tables = () => {
 
         </TableBody>
       </Table>
-
-
-
-      <ul>
-        <li>
-          <Link to={process.env.PUBLIC_URL + '/tables/booking/:id'}>Tables number</Link>
-        </li>
-        <li>
-          <Link to={process.env.PUBLIC_URL + '/tables/booking/new'}>New booking</Link>
-        </li>
-        <li>
-          <Link to={process.env.PUBLIC_URL + '/tables/events/:id'}>Event number</Link>
-        </li>
-        <li>
-          <Link to={process.env.PUBLIC_URL + '/tables/events/new'}>New event</Link>
-        </li>
-      </ul>
     </div>
   );
 };
