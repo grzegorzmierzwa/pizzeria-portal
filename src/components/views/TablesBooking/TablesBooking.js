@@ -41,7 +41,7 @@ const TablesBooking = () => {
         </TableHead>
         <TableBody>
           <TableRow>
-            <TableCell component="th" scope="row">
+            <TableCell>
               {demoData.table}
             </TableCell>
             <TableCell>
