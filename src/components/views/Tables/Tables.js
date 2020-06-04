@@ -84,7 +84,7 @@ const Tables = () => {
         <TableBody>
           {schedul.map(row => (
             <TableRow key={row.time}>
-              <TableCell component="th" scope="row">
+              <TableCell>
                 {row.time}
               </TableCell>
               <TableCell>
