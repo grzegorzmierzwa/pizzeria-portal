@@ -73,13 +73,15 @@ const Tables = () => {
 
       <Table>
         <TableHead>
-          <TableCell>Time</TableCell>
-          <TableCell>Table 1</TableCell>
-          <TableCell>Table 2</TableCell>
-          <TableCell>Table 3</TableCell>
-          <TableCell>Table 4</TableCell>
-          <TableCell>Table 5</TableCell>
-          <TableCell>Table 6</TableCell>
+          <TableRow>
+            <TableCell>Time</TableCell>
+            <TableCell>Table 1</TableCell>
+            <TableCell>Table 2</TableCell>
+            <TableCell>Table 3</TableCell>
+            <TableCell>Table 4</TableCell>
+            <TableCell>Table 5</TableCell>
+            <TableCell>Table 6</TableCell>
+          </TableRow>
         </TableHead>
         <TableBody>
           {schedul.map(row => (

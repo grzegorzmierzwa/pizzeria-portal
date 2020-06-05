@@ -12,13 +12,13 @@ const MainLayout = ({children}) => {
   return (
     <div className={styles.component}>
       <AppBar>
-        <Container maxWidht='lg'>
+        <Container maxwidht='lg'>
           <Toolbar disableGutters>
             <PageNav/>
           </Toolbar>
         </Container>
       </AppBar>
-      <Container maxWidht='lg'>
+      <Container maxwidht='lg'>
         <Toolbar />
         {children}
       </Container>
