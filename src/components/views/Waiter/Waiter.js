@@ -27,11 +27,12 @@ class Waiter extends React.Component {
   }
 
   renderActions(id, status) {
+    const { fetchStatus } = this.props;
     switch (status) {
       case 'free':
         return (
           <>
-            <Button onClick={() => this.fetchStatus(id, 'thinking')}>thinking</Button>
+            <Button onClick={() => fetchStatus(id, 'thinking')}>thinking</Button>
             <Button component={Link} to={`${process.env.PUBLIC_URL}/waiter/order/new`}>new order</Button>
           </>
         );
@@ -41,19 +42,19 @@ class Waiter extends React.Component {
         );
       case 'ordered':
         return (
-          <Button onClick={() => this.fetchStatus(id, 'prepared')}>prepared</Button>
+          <Button onClick={() => fetchStatus(id, 'prepared')}>prepared</Button>
         );
       case 'prepared':
         return (
-          <Button onClick={() => this.fetchStatus(id, 'delivered')}>delivered</Button>
+          <Button onClick={() => fetchStatus(id, 'delivered')}>delivered</Button>
         );
       case 'delivered':
         return (
-          <Button onClick={() => this.fetchStatus(id, 'paid')}>paid</Button>
+          <Button onClick={() => fetchStatus(id, 'paid')}>paid</Button>
         );
       case 'paid':
         return (
-          <Button onClick={() => this.fetchStatus(id, 'free')}>free</Button>
+          <Button onClick={() => fetchStatus(id, 'free')}>free</Button>
         );
       default:
         return null;
