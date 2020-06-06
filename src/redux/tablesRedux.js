@@ -90,6 +90,7 @@ export default function reducer(statePart = [], action = {}) {
           active: false,
           error: action.payload,
         },
+        data: statePart.data.map (order => order.id === action.id ? {...order, status: action.status } : order ),
       };
     }
     default:
